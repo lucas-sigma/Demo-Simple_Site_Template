@@ -7,6 +7,27 @@
     <title>{% block title %}{% endblock title %}</title>
 </head>
 <body>
+
+    <div class="container-fluid">
+
+        <header>
+            <div class="row">
+                <ul class="nav justify-content-end">
+                    {% block nav-item %}{% endblock nav-item %}
+                </ul>
+            </div>
+        </header>
+        <main>
+            {% block main %}{% endblock main %}
+        </main>
+        <aside>
+            
+        </aside>
+        <footer>
+
+        </footer>
+
+    </div>
     
 
     <!-- Static -->

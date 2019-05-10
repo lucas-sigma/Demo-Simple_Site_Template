@@ -1,3 +1,6 @@
 from django.shortcuts import render
 
-# Create your views here.
+from . import views
+
+def fale_conosco(request):
+    return render(request, 'fale_conosco.html')
